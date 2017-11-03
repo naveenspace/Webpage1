@@ -1,0 +1,52 @@
+html{
+
+background: #ecf0f1 fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.calci {
+	
+  width:300px;
+  border: 3px;
+  border-color: #9cb6c7;
+  border-style: ridge;
+  background-color: black;
+  border-radius: 10px;
+ 
+ background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.flex_container {
+  display: flex;
+  justify-content: relative;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60vh;
+  
+}
+
+
+form  {
+  padding: 5px;
+  margin: 2px;
+}
+
+input {
+  margin: 8px 5px 8px 2px;
+  padding: 8px;
+  font-size: 30pt;
+  border-color: #7f8c8d;
+
+}
+
+input[type="String"] {
+  width: 90%;
+}
+input[type="button"]:hover {
+  background: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  border-color: #f2f2f2;
+}
+
+
