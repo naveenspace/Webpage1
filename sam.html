@@ -7,12 +7,36 @@
 <meta property="og:image" content="calci.jpg">
 <meta name="viewport" content="width=device-width,initial-scale=0">
 <style>
-body {margin:0;}
+.row1
+{
+padding-bottom:30px;
+}
 .one
 {
 padding-top:5%;
 background-color:gray;
 }
+
+.sone{
+ background-color:#D3D3D3;
+  padding-left:10px;
+  padding-top:28px;
+  }
+
+.stwo
+{
+background-color:#D3D3D3;
+  padding-left:10px;
+  padding-top:28px;
+}
+
+.sthree{
+background-color:#D3D3D3;
+  padding-left:10px;
+  padding-top:28px;
+}
+body {margin:0;}
+
 
 .nav a {
   float: left;
@@ -20,9 +44,9 @@ background-color:gray;
   color: white;
   background-color: #4CAF50;
   text-align: center;
-  padding: 14px 52px;
+  padding: 16px 59.85px;
   text-decoration: none;
-  font-size: 30px;
+  font-size:20px;
   border-style: solid;
   border-width:1px;
   border-color:black;
@@ -57,15 +81,16 @@ return eval(document.getElementById('demo').value);
 
 <body>
 <div class="one" id="demo">
+
 <div class="nav">
   <a class="active" href="n1.html">Home</a>
   </div>
 <div class="nav">
 
-<a href="#"><b>Android</b></a>
+<a href="android.html"><b>Android</b></a>
 </div>
 <div class="nav">
-<a href="#"><b>Windows</b></a>
+<a href="windows.html"><b>Windows</b></a>
 </div>
 <div class="nav">
 <a href="n2.html"><b>Gadgets</b></a>
@@ -81,14 +106,16 @@ return eval(document.getElementById('demo').value);
 <a href="#"><b>About Us</b></a>
 </div>
 </div>
+<br>		
 
-		
-<a href="#">Calculator</a>
 <br></br>
 <br></br>
+<table class="row1">
+<tr>
+<td>
 
- <div class="flex_container">
-  <div class="calci">
+<div class="flex_container" >
+<div class="calci">
 <form>
 <input type="String" id="demo" >
 <br>
@@ -118,9 +145,66 @@ return eval(document.getElementById('demo').value);
 <input type="button" value="/" onclick=document.getElementById('demo').value+="/">
 
 </form>
-</div>
-</div>
 
+</div>
+</div>
+</td>
+<td>
+<br>
+<br>
+<br>
+<br>
+
+<b> 1) (1015)pow2=?</b><br><br>
+<div class="sone">
+<input type="checkbox">1040125<br>
+<input type="checkbox">1030225<br>
+<input type="checkbox">1050125<br>
+<input type="checkbox">1025125<br><br>
+<input type="submit"  value="submit"  onclick="one()">
+<script>
+function one(){
+window.alert("answer is : 1030225");
+}
+</script>
+</div>
+<br>
+<br>
+
+<b> 2) Largest five digit number exactly divisble by 39 is:<br><br>
+<div class="stwo">
+<input type="checkbox">99979<br>
+<input type="checkbox">99956<br>
+<input type="checkbox">99989<br>
+<input type="checkbox">99996<br><br>
+<input type="submit"  value="submit"  onclick="two()">
+<script>
+function two(){
+window.alert("answer is : 99979");
+}
+</script>
+<br>
+<br>
+</div>
+<b> 3) How many of the following are divisible by 9: 96381,,46729,5445,85369,46818</b><br><br>
+<div class="sthree">
+<input type="checkbox">1<br>
+<input type="checkbox">2<br>
+<input type="checkbox">3<br>
+<input type="checkbox">4<br>
+<br>
+
+<input type="submit"  value="submit" class="3" onclick="three()")>
+<script>
+function three(){
+window.alert("answer is : 2");
+}
+</script>
+<br>
+<br>
+</div>
+</td>
+</tr>
 </body>
 </html>
 
